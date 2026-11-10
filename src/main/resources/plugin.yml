@@ -1,0 +1,21 @@
+name: Szafa
+version: 1.0.0
+main: pl.szafa.SzafaPlugin
+api-version: '1.21'
+description: Szafa ze zwierzatkami i kostiumami
+commands:
+  szafa:
+    description: Otwiera szafe (zwierzatka i kostiumy)
+    usage: /szafa
+    aliases: [szafka]
+  szafaadmin:
+    description: Administracja szafa
+    usage: /szafaadmin <give|take|list|reload>
+    permission: szafa.admin
+permissions:
+  szafa.use:
+    description: Uzywanie /szafa
+    default: true
+  szafa.admin:
+    description: Administracja szafa
+    default: op
